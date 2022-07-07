@@ -6,6 +6,7 @@ input[type=text] {
     border: 2px solid burlywood;
     border-radius: 4px;
 }
+
 input[type=button] {
     width: auto;
     padding: 12px 20px;
@@ -14,6 +15,46 @@ input[type=button] {
     border: 1px solid #333;
     border-radius: 4px;
 }
+
 body {
     text-align: justify;
+}
+
+.dice {
+    /* HTML symbols */
+    font-size: 100px;
+    font-weight: 50;
+}
+span {
+    padding: 10px;
+}
+.dice::after {
+    content: '';
+    animation: rolling 6s linear infinite;
+}
+
+@keyframes rolling {
+    0% {
+        content: '\2680';
+    }
+
+    20% {
+        content: '\2681';
+    }
+
+    40% {
+        content: '\2682';
+    }
+
+    60% {
+        content: '\2683';
+    }
+
+    80% {
+        content: '\2684';
+    }
+
+    100% {
+        content: '\2685';
+    }
 }
