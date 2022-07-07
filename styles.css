@@ -1,0 +1,19 @@
+input[type=text] {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid burlywood;
+    border-radius: 4px;
+}
+input[type=button] {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+body {
+    text-align: justify;
+}
