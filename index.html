@@ -5,17 +5,46 @@
         <script src = "script.js"> </script>
         <title> dvd Dice Roll Generator</title>
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <h1> <span class="dice"></span> Random Dice Roll Generator   </h1>
-        <div> 
+        <div id="container"> 
+            <h1>  Random Dice Roll Generator <span class="dice"></span>  </h1>
+            <h3>  </h3>
             <form name = "form1">
-                How many faces on your dice: <input type="text" name="numDiceFace">
-                <input type="button" value="ROLL!" onclick="javascript:rollDice();">
+                <div class = "row">
+                    <div class="col-25"> 
+                        <label for="numInput">Number of faces: </label>    
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id = "numInput" min="1" name="numDiceFace">
+                        <input type="button" value="ROLL!" onclick="javascript:processInput();">
+                    </div>
+                </div>
                 <br>
-                Result: <input type="text" name="total">
+                <div class = "row">
+                    <div class="col-25"> 
+                        <label for="resultField">You rolled: </label>    
+                    </div>
+                    <div class="col-75"></div>
+                        <input type="text" id = "resultField"name="total">
+                    </div>
+                </div>
             </form>
+            <br>
+            <br>
+            <div>
+                <table id = "tab1">
+                    <thead>
+                        <tr>
+                            <td> Roll# </td>
+                            <td> #Face</td>
+                            <td> Result </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
 
         
