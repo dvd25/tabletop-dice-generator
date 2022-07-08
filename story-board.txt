@@ -1,0 +1,6 @@
+Tabletop Dice Roll Generator Story Board
+
+1. User goes onto webpage
+2. Users are able to see an input box for them to enter how many faces they want for their die to roll on.
+3. A button to submit their input and roll
+4. A fast response of the result will be displayed for them.
