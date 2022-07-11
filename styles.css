@@ -42,7 +42,7 @@ input[type=button] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid burlywood;
+    border: 2px solid burlywood;
     border-radius: 4px;
     margin-left: 30px;
 }
@@ -113,11 +113,24 @@ span {
 
 table {
     border-collapse: collapse;
+    width: 25%;
+    text-align: center;
  }
  
  /*  Selecting td   */
  table td, table th {
-    border: 1px solid #333;
-    padding: 5px;
+    border: 2px solid burlywood;
+    padding: 10px;
  }
+ 
+table tr:hover {
+    background-color: rgb(226, 165, 85);
+}
 
+table thead{
+    text-decoration: underline;
+}
+
+table td:last-child{
+    font-weight: bolder;
+}
